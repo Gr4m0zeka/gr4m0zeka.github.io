@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическое задание (flex)</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(159, 0, 199);
+
+            background-size: cover;
+            background-image: url(background3.jpg);
+
+        }
+
+        .box {
+            height: 500px;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .item {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+
+            margin: 20px;
+
+            background-color: darkorange;
+
+            position: relative;
+
+            background-size: cover;
+           
+        }
+
+        .item:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            border-radius: 50%;
+
+            
+        }
+
+        .img1 {
+            background-image: url(circle-background.jpg);
+        }
+        .img2 {
+            background-image: url(background.jpg);
+        }
+        .img3 {
+            background-image: url(background2.jpg);
+        }
+        .img4 {
+            background-image: url(background3.jpg);
+        }
+
+        .img1:after {
+            background-color: rgba(211, 159, 249, 0.297);
+        }
+        .img2:after {
+            background-color: rgba(177, 249, 159, 0.297);
+        }
+        .img3:after {
+            background-color: rgba(249, 217, 159, 0.297);
+        }
+        .img4:after {
+            background-color: rgba(161, 159, 249, 0.297);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="item img1"></div>
+            <div class="item img2"></div>
+            <div class="item img3"></div>
+            <div class="item img4"></div>
+        </div>
+    </div>
+</body>
+</html>
